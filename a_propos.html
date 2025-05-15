@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Guide de Lotissement Katiekan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    /* Réinitialisation et styles de base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Oswald', sans-serif;
+    }
+    body {
+      background: #E9F1FA;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    .header {
+      background-color: #00ABE4;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header h1 {
+      font-size: 1.5rem;
+    }
+    .nav-links a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s ease-in-out;
+    }
+    .nav-links a:hover {
+      color: #E9F1FA;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .container {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    /* Animation pour le titre principal */
+    .container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    .about-section {
+      width: 100%;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    /* Animation pour les sous-titres */
+    .about-section h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #00ABE4;
+      animation: fadeInLeft 1s ease-out;
+    }
+    .about-section p {
+      padding: 0 10px;
+      text-align: justify;
+    }
+    .footer {
+      background-color: #ffffff;
+      padding: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+    }
+    /* Définition des animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Guide de Lotissement Katiekan</h1>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="a_propos.html">À propos</a>
+      <a href="#contact">Nous contacter</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>À propos</h2>
+    
+    <section class="about-section">
+      <h3>Notre histoire</h3>
+      <p>
+        Le Guide de Lotissement Katiekan est né d'une envie de simplifier l'accès aux informations essentielles et aux services du lotissement. Conçu pour répondre aux besoins des résidents et visiteurs, ce projet a été développé avec passion et rigueur pour instaurer la transparence et la proximité entre les utilisateurs et l'administration.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h3>Nos valeurs</h3>
+      <p>
+        Nous plaçons l'innovation, la convivialité et la sécurité au cœur de notre démarche. Chaque fonctionnalité, chaque page a été pensée pour garantir un service accessible, intuitif et efficace, reflétant ainsi notre volonté de bâtir une communauté solidaire et connectée.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h3>Notre équipe</h3>
+      <p>
+        Derrière le Guide de Lotissement Katiekan se trouve une équipe dynamique et dévouée. Chacun de nos membres apporte son expertise du développement, de l'urbanisme et de la relation client, travaillant ensemble pour offrir une expérience utilisateur exceptionnelle.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h3>Contact et Suggestions</h3>
+      <p>
+        Nous aimons échanger avec nos utilisateurs. Que ce soit pour remonter des idées, signaler une anomalie ou simplement partager vos impressions, nous sommes toujours à l'écoute. N'hésitez pas à nous contacter afin de contribuer à l'amélioration continue de ce guide.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Guide de Lotissement Katiekan</p>
+  </footer>
+</body>
+</html>
