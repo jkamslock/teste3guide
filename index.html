@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide de Lotissement Katiekan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    body {
+      background: #E9F1FA;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    .header {
+      background-color: #00ABE4;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+    }
+
+    .nav-links a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -3px;
+      left: 0;
+      background-color: white;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .nav-links a:hover {
+      color: #E9F1FA;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .container {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .container h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .input-group {
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #00ABE4;
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .options label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+    }
+
+    .btn.blue {
+      background-color: #00ABE4;
+      color: white;
+    }
+
+    .btn.white {
+      background-color: white;
+      border: 2px solid #00ABE4;
+      color: #00ABE4;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-section {
+      width: 100%;
+      max-width: 400px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+      pointer-events: none;
+    }
+
+    .form-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .form-section h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .form-section input,
+    .form-section textarea {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      padding: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Bienvenue sur le Guide de Lotissement Katiekan</h1>
+    <nav class="nav-links">
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Nous contacter</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Connectez-vous ou Faites une visite</h2>
+
+    <div class="input-group">
+      <label for="username">Nom d'utilisateur</label>
+      <input id="username" type="text" placeholder="Nom d'utilisateur">
+    </div>
+    <div class="input-group">
+      <label for="password">Mot de passe</label>
+      <input id="password" type="password" placeholder="Mot de passe">
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox"> Se rappeler de moi?</label>
+      <a href="#" style="color: #00ABE4;">Mot de passe oublié?</a>
+    </div>
+
+    <div class="button-group">
+      <a href="C:\Users\USER\Downloads\GUIDE AVEC PROMPT\2Pageadmin1.html" class="btn blue">Accès Administrateur</a>
+      <button class="btn white" onclick="toggleForm()">Accès Visiteur</button>
+    </div>
+
+    <section id="visitor-form" class="form-section">
+      <h3>Formulaire Visiteur</h3>
+      <form action="1-2choixvisiteur.html" method="GET">
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Nom" required />
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required />
+        <label for="contact">Contact</label>
+        <input type="text" name="contact" id="contact" placeholder="Contact" required />
+        <label for="motif">Pourquoi visitez-vous ?</label>
+        <textarea name="motif" id="motif" placeholder="Pourquoi visitez-vous ?" required></textarea>
+        <button type="submit" class="btn blue">Valider et Accéder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Guide de Lotissement Katiekan</p>
+  </footer>
+
+  <script>
+    function toggleForm() {
+      document.getElementById('visitor-form').classList.toggle('visible');
+    }
+  </script>
+</body>
+</html>

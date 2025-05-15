@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulter le guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      background-color: #E9F1FA;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00ABE4;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .profil {
+      display: flex;
+      align-items: center;
+    }
+
+    header .profil img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 5%;
+    }
+
+    h1 {
+      color: #00ABE4;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .guide {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .guide iframe {
+      width: 100%;
+      height: 750px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .retour {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #00ABE4;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #00ABE4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profil">
+      <img src="admin.jpg" alt="Photo admin">
+      <span>Bienvenue, Visiteur</span>
+    </div>
+    <nav>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Nous contacter</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Guide du lotissement</h1>
+    <div class="guide">
+
+      <iframe src="C:\Users\USER\Downloads\GUIDE AVEC PROMPT\NOUVEAU GUIDE DANIEL 4HA TOME 1.pdf"></iframe>
+
+    </div>
+    <a class="retour" href="admin.html">← Retour à l'espace visiteur</a>
+  </main>
+
+  <footer>
+    <a href="a-propos.html">À propos</a> |
+    <a href="contact.html">Nous contacter</a>
+  </footer>
+</body>
+</html>

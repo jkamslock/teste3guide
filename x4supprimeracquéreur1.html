@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supprimer un acquéreur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      margin: 0;
+      background-color: #E9F1FA;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #00ABE4;
+      padding: 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .profil {
+      display: flex;
+      align-items: center;
+    }
+
+    header .profil img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #00ABE4;
+      text-align: center;
+    }
+
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #00ABE4;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 16px;
+      border-radius: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #008bbd;
+    }
+
+    .retour {
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      color: #00ABE4;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #00ABE4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profil">
+      <img src="admin.jpg" alt="Photo admin">
+      <span>Bienvenue, Admin</span>
+    </div>
+    <nav>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Nous contacter</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Supprimer un acquéreur</h1>
+    <form>
+      <label for="nom">Nom complet de l’acquéreur</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="lot">Numéro de lot</label>
+      <input type="text" id="lot" name="lot" required>
+
+      <label for="motif">Motif de la suppression</label>
+      <textarea id="motif" name="motif" rows="4" required></textarea>
+
+      <button type="submit">Soumettre pour validation</button>
+    </form>
+    <a class="retour" href="C:\Users\USER\Downloads\GUIDE AVEC PROMPT\2Pageadmin1.html">← Retour à l'espace administrateur</a>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Guide de Lotissement Katiekan</p>
+  </footer>
+</body>
+</html>
